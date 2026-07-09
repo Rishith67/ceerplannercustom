@@ -1,20 +1,34 @@
-# React + Vite
+# 🗓️ CEER Custom Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive client-side scheduling and custom planning application. Built using React and Vite, this utility features real-time UI updates, mobile-optimized layouts, and self-contained in-browser state persistence to ensure seamless performance without requiring an active server environment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack & Architecture
 
-## React Compiler
+<p align="left">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/JavaScript_ES6-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS" />
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white" alt="ESLint" />
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend Core:** Functional React components using modern hooks for robust local state and side-effect handling.
+- **Build Tooling:** Optimized compilation pipeline driven by Vite for ultra-fast Hot Module Replacement (HMR) and production asset bundling.
+- **Design System:** Tailored, fluid layout structures featuring absolute mobile responsiveness to fit any viewport size comfortably.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Key Features
 
-## In Browser Memory
+* **In-Browser Persistence:** Eliminates server request overhead by caching schedule models directly inside the user's browser runtime environment.
+* **Fluid Mobile Responsiveness:** Engineered with responsive breakpoints to provide a smooth, native-app-like user interface across mobile, tablet, and desktop viewports.
+* **Instant State Reconciliation:** Changes, additions, or structural updates to your planning data update the interface instantly via reactive DOM bindings.
+* **Lightweight Footprint:** Zero heavy external database modules or server backends required—clone it, boot it, use it.
 
-In-browser memory stores data temporarily within a user's web browser, enabling applications to retain information during or across sessions. It includes mechanisms like JavaScript variables, sessionStorage, localStorage, and IndexedDB. This improves performance, supports offline functionality, preserves user preferences, and reduces server requests without requiring an active internet connection.
+---
+
+## 🧠 Data Persistence & State Architecture
+
+The application relies heavily on optimized **In-Browser Memory** structures to retain configuration settings and timeline metrics.
